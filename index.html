@@ -119,6 +119,13 @@
   </div>
 
   <script>
+    const panelSelected = document.querySelectorAll('.panel');
+    function toggleOpenClass(){
+      this.classList.toggle('open');
+    }
+    panelSelected.forEach(function(panel){
+      panel.addEventListener('click',toggleOpenClass);
+    })
 
   </script>
 
